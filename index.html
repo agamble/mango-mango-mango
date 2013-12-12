@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mango</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+	}
+
+	.title {
+		font-size: 100pt;
+		text-align: center
+	}
+
+	#mangotree {
+		width: 20%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.mango {
+		position: fixed;
+		width: 100px;
+	}
+	</style>
+</head>
+<body>
+
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mangomango.png" alt="" class="mango" />
+	<img src="mango.png" alt="" id="mangotree">
+	<div class="title">
+		mango mango mango
+	</div>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script>
+
+	var window_width = $(window).width()
+	var window_height = $(window).height()
+
+
+	setInterval(function(){
+
+		$('.mango').each(function(index,element) {
+			var randomx = Math.random() * window_width;
+			var randomy = Math.random() * window_height;
+			$(this).animate( {
+				top: randomy,
+				left: randomx
+			}, 500, function() {
+
+			})
+		})
+	}, 500);
+
+
+</script>
+
+</body>
+</html>
